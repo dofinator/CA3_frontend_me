@@ -6,7 +6,8 @@ function Starwars() {
     planetName: "",
     speciesName: "",
     starshipName: "",
-    vehicleName: ""
+    vehicleName: "",
+    filmName: "",
 
   }
 
@@ -23,6 +24,7 @@ function Starwars() {
       <p>species: {dataFromServer.speciesName}</p>
       <p>starship: {dataFromServer.starshipName}</p>
       <p>vehicle: {dataFromServer.vehicleName}</p>
+      <p>film: {dataFromServer.filmName}</p>
     </div>
   );
 }
