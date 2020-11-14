@@ -1,3 +1,3 @@
-let URL = "https://www.mandenderkoder.com/ca3_backend"
+let URL = "https://www.mandenderkoder.com/ca3_backend_me"
 
-export {URL};
+export { URL };
