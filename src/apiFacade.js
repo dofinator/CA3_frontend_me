@@ -57,6 +57,30 @@ function apiFacade() {
     return fetch(URL + "/api/info/" + role, options).then(handleHttpErrors);
   };
 
+  const getUserName = () => {
+    let myToken = getToken();
+    let tokenData = myToken.split(".")[1];
+    let decoedeJsonData = window.atob(tokenData);
+    let decodedJwtData = JSON.parse(decoedeJsonData);
+    let uName = decodedJwtData.username;
+    console.log(uName);
+
+    return uName;
+  };
+
+  const addWife = (wife) => {
+    let userName = getUserName();
+
+    const options = makeOptions("PUT", true, {
+      wName: wife.name,
+      uName: userName,
+    });
+
+    return fetch(URL + "/api/info/edit/" + userName, options).then(
+      handleHttpErrors
+    );
+  };
+
   const fetchStarwars = () => {
     const options = makeOptions("GET");
 
@@ -87,7 +111,8 @@ function apiFacade() {
     logout,
     fetchData,
     fetchStarwars,
-    getRole
+    getRole,
+    addWife
   };
 }
 
