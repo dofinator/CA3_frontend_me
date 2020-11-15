@@ -21,7 +21,7 @@ function User() {
   return (
     <div>
       <h1>Du er logget ind som user og har adgang til denne side</h1>
-      <h3> Du kan tilføje en kone her </h3>
+      <h3> Du kan tilføje en kone her tak </h3>
 
       <form>
         <h4></h4>
