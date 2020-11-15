@@ -41,7 +41,7 @@ function App() {
             <Route exact path="/">
               <LogIn login={login} />
               <p>{error}</p>
-              <h3>Hejsa, hvis du ikke er Lukas, så velkommen:</h3>
+              <h3>Hejsa, hvis du ikke er christoffer, så velkommen:</h3>
                   <p>Dette er velkomstsiden til vores startcode.<br/>
                   Log ind som user/testuser eller admin/testadmin.<br/>
                   Som user og admin kan man tilgå begge brugerheadere.<br/>
